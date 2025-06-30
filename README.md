@@ -73,15 +73,15 @@ JMC Music Shop is a comprehensive, user-friendly online store where users can sh
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="public/1.png" width="280" style="margin:5px;" />
-  <img src="public/2.png"  width="280" style="margin:5px;" />
-  <img src="public/3.png"  width="280" style="margin:5px;" />
-  <img src="public/4.png" width="280" style="margin:5px;" />
+  <img src="images/1.png" width="280" style="margin:5px;" />
+  <img src="images/2.png"  width="280" style="margin:5px;" />
+  <img src="images/3.png"  width="280" style="margin:5px;" />
+  <img src="images/4.png" width="280" style="margin:5px;" />
   <br />
-  <img src="public/5.png" width="280" style="margin:5px;" />
-  <img src="public/6.png"  width="280" style="margin:5px;" />
-  <img src="public/7.png" width="280" style="margin:5px;" />
-  <img src="public/8.png" width="280" style="margin:5px;" />
+  <img src="images/5.png" width="280" style="margin:5px;" />
+  <img src="images/6.png"  width="280" style="margin:5px;" />
+  <img src="images/7.png" width="280" style="margin:5px;" />
+ 
 </p>
 🚀 Getting Started
 
