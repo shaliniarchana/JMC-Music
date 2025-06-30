@@ -52,24 +52,6 @@ JMC Music Shop is a comprehensive, user-friendly online store where users can sh
 | **Others**   | Session management, Admin authorization, APIs   |
 
 
-
-## 📁 Project Structure
-
-
-📦 JMC-Music
-├── HOMEPAGE.php         # Main landing page
-├── login.php            # User authentication
-├── register.php         # User registration
-├── admin/               # Admin dashboard & tools
-├── cart/                # Shopping cart system
-├── orders/              # Order placement and history
-├── reviews/             # Product ratings and reviews
-├── includes/            # Common headers, footers, sessions
-├── css/                 # Stylesheets
-├── js/                  # Client-side scripts and AJAX
-├── sql/                 # Database schema and data dumps
-└── assets/              # Images and icons
-
 ## 📸 Screenshots
 
 <p align="center">
