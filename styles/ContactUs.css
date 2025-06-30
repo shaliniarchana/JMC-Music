@@ -1,0 +1,119 @@
+/* Contact Us Section */
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+
+.form-container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.5); /* Transparent white layer to make text more readable */
+    border-radius: 10px;
+    padding: 30px;
+    width: 200%;
+    max-width: 600px; /* Slightly increased width for message box flexibility */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    /* Create a blurred background effect */
+    
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(200px); /* Blurs the background */
+}
+.logo-container img {
+    margin-bottom: 20px;
+    max-width: 150px;
+}
+
+.form-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff6f61;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6f61;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #ff4a3d;
+}
+
+/* Terms and Conditions */
+.terms-conditions {
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.terms-conditions h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.terms-conditions p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.terms-conditions a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.terms-conditions a:hover {
+    text-decoration: underline;
+}

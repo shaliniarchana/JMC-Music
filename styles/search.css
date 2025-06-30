@@ -1,0 +1,42 @@
+/* Center the search bar */
+
+
+/* Search box styling */
+.search-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px ;
+    max-width: 350px;
+    
+}
+
+/* Input field styling */
+.search-box input {
+    width: 100%;
+    padding: 12px 50px; /* Adjusted padding for icon */
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    background-color: smoke white;
+}
+
+/* Focus effect */
+.search-box input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Search icon */
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555;
+}

@@ -1,0 +1,79 @@
+
+/* Background Overlay */
+#successContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Success Box */
+.successBox {
+    background: white;
+    padding: 50px 60px; /* Increased padding for more space */
+    border-radius: 25px; /* Larger rounded corners */
+    text-align: center;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.3);
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+    animation: scaleIn 0.5s ease-in-out, bubbleEffect 2s ease-in-out infinite;
+}
+
+/* Success Message Text */
+.successBox p {
+    font-size: 20px; /* Bigger text */
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Font Awesome Icon Style */
+.successBox p i {
+    color: #4CAF50;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pop {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes checkmarkAnim {
+    from { opacity: 0; transform: translate(-50%, -60%) scale(0); }
+    to { opacity: 1; transform: translate(-50%, -60%) scale(1); }
+}
+
+/* Bubble Effect */
+@keyframes bubbleEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3); }
+    100% { transform: scale(1); }
+}
+
+/* Fade Out Effect */
+.fadeOut {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease-out, transform 0.3s ease-out;
+}

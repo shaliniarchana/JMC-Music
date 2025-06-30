@@ -1,0 +1,8 @@
+when clone my project run
+
+git clone --recurse-submodules https://github.com/shaliniarchana/JMC-Music-Shop.git
+
+or if already cloned
+
+git submodule update --init --recursive
+

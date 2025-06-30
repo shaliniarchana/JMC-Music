@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 100px;
+    width: 80%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.cart-container {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-item {
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.cart-item img {
+    height: 150px;
+    width: 200px;
+
+}
+
+.item-details {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity button {
+    background: #ddd;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.quantity input {
+    width: 30px;
+    text-align: center;
+}
+
+.pay-btn, .delete-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.pay-btn {
+    background: blue;
+    color: white;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+}
+
+.total-price {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.checkout-btn {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+

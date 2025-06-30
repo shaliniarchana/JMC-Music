@@ -1,0 +1,292 @@
+/* General Styles */
+/* General Styles */
+
+
+/* Style for the popup message */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    padding: 20px 30px; /* Increased padding for a larger box */
+    border-radius: 8px; /* Slightly rounder corners */
+    z-index: 1000;
+    font-size: 18px; /* Larger text */
+    display: none; /* Hide initially */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    max-width: 80%; /* Ensures the popup doesn't get too wide on large screens */
+    text-align: center;
+    min-width: 250px; /* Set a minimum width */
+}
+
+/* Success message styles */
+.success-message {
+    background-color: #4CAF50;
+}
+
+/* Error message styles */
+.error-message {
+    background-color: #f44336;
+}
+
+/* Blur effect for the background */
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Darkened background */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    z-index: 999; /* Behind the popup */
+    display: none; /* Hidden initially */
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/* Error message styles */
+.error-message {
+    background-color: #f44336;
+}
+
+/* Success and Error Message Styles */
+.message {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #28a745;
+    color: white;
+}
+
+.message.error {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+.report-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.report-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+/* General Body Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../images/bg2.jpg') no-repeat center center/cover;
+    position: relative;
+}
+/* Apply Blur Effect */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay */
+    backdrop-filter: blur(12px);
+    z-index: -1;
+}
+
+/* Container for content */
+
+
+/* Header Styling */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: auto; /* Table width is reduced */
+    margin: 0 auto; /* Center the table */
+    max-height: 400px; /* Set a maximum height */
+    overflow-y: auto; /* Enable scrolling */
+    display: block; /* Make the table scrollable */
+    border-collapse: collapse;
+    border-radius: 12px;
+    background: rgba(240, 230, 230, 0.541); /* Light transparent background */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 20px 125px; /* Adjust padding for compact look */
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #a89494;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+/* Header Cells */
+th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+     /* Ensures it stays above other elements */
+}
+
+
+/* Table Rows */
+td {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+tr:nth-child(even) td {
+    background-color: whitesmoke;
+}
+
+tr:hover td {
+    background-color: rgba(220, 220, 220, 0.6);
+}
+
+tr:first-child td {
+    border-top: none;
+}
+
+/* Button Styling */
+button, input[type="submit"] {
+    
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+    text-align: center; /* Center text in button */
+}
+
+/* Fix the white buttons issue */
+button:hover, input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+/* Button Specific Styles */
+button.edit-btn {
+    background-color: #17a2b8;
+    
+}
+
+button.edit-btn:hover {
+    background-color: #138496;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+}
+
+button.delete-btn:hover {
+    background-color: #f45d6c;
+}
+
+
+/* Links */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+td button {
+    padding: 5px 10px; /* Adjust padding of buttons */
+    font-size: 12px; /* Make buttons smaller to fit well inside cells */
+}
+
+button.edit-btn, button.delete-btn {
+    width: auto;
+    padding: 6px 12px; /* Smaller button size */
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/* Styling for the button with class 'thilo' */
+.thilo {
+    margin: 20px ;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none; /* Ensures no underline on the <a> */
+}
+
+/* Hover effect for the button */
+.thilo:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
