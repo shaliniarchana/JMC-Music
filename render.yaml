@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: JMC Music Shop
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
